@@ -1,0 +1,33 @@
+<p>DODAJ NASZ WYMARZONY DOM! </p>
+
+<div class="container">
+
+  <form>
+    <label>Nazwa</label><br>
+    <input class="form-control" type="text" name="name" [(ngModel)]=house.name /> <br>
+
+    <label>Miejscowość</label><br>
+    <input class="form-control" type="text" name="city" [(ngModel)]=house.city /> <br>
+
+    <label>Cena</label><br>
+    <input class="form-control" type="text" name="price" [(ngModel)]=house.price /> <br>
+
+    <label>Odległość od Skarszew</label><br>
+    <input class="form-control" type="text" name="distanece" [(ngModel)]=house.distance /> <br>
+
+    <label>Powierzchnia domu</label><br>
+    <input class="form-control" type="text" name="houseArea" [(ngModel)]=house.houseArea /> <br>
+
+    <label>Powierzchnia działki</label><br>
+    <input class="form-control" type="text" name="plotArea" [(ngModel)]=house.plotArea /> <br>
+
+    <label>Link do strony z ofertą</label><br>
+    <input class="form-control" type="text" name="link" [(ngModel)]=house.link /> <br>
+
+    <button class="btn btn-lg btn-primary" (click)="create()" >DODAJ</button>
+    <button class="btn btn-lg btn-secondary" routerLink="/home">LISTA DOMÓW</button>
+
+  </form>
+
+
+</div>

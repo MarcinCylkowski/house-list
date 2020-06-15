@@ -1,0 +1,45 @@
+<p>LISTA DOMÓW</p>
+<div class="row">
+    <div class="col-md-12">
+
+        <table class="table table-bordered">
+
+            <thead>
+                <tr>
+
+                    
+                    <th>Id</th>
+                    <th>Nazwa</th>
+                    <th>Miejscowość</th>
+                    <th>Cena</th>
+                    <th>Odległość od Skarszew</th>
+                    <th>Powierzchnia domu</th>
+                    <th>Powierzchnia działaki</th>
+                    <th>Link</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let h of houses">
+                    
+                    <td>{{h.house_id}}</td>
+                    <td>{{h.name}}</td>
+                    <td>{{h.city}}</td>
+                    <td>{{h.price}}</td>
+                    <td>{{h.distance}}</td>
+                    <td>{{h.houseArea}}</td>
+                    <td>{{h.plotArea}}</td>
+                    <td>{{h.link}}</td>
+                    <td><button class="btn btn-sm btn-danger" (click)="delete(h.house_id)" >USUŃ</button></td>
+                </tr>
+            </tbody>
+            
+        </table>
+                <div class="button">
+    
+                <button class="btn btn-lg btn-primary" routerLink="/addhome" >DODAJ NOWĄ POZYCJE</button>
+    
+                </div>
+        
+    </div>
+</div>

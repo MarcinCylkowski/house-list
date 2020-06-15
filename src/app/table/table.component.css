@@ -1,0 +1,28 @@
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+table
+{
+    margin-top: 100px;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    margin-bottom: 100px;
+}
+p
+{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 70px ;
+  margin-top: 50px;
+}
+.td
+{
+    height: 10px;
+}
